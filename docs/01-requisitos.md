@@ -37,3 +37,11 @@ Uma boa forma de escrevê-los é indicar **o que será medido e qual resultado �
 **6. Usabilidade (usability).** É a facilidade de usar o produto e entender o que está acontecendo. Por exemplo, se a imagem de um post ainda estiver carregando, a interface deve mostrar esse estado com clareza e continuar utilizável. Isso é diferente da latência: mesmo uma resposta rápida pode oferecer uma experiência confusa.
 
 > **Em uma frase:** requisitos funcionais dizem **o que o usuário consegue fazer**; requisitos não funcionais dizem **quão bem o sistema precisa funcionar ao permitir essas ações**.
+
+---
+
+> **Resumo rápido — pontos-chave para a entrevista**
+>
+> - Funcionais: criar post (texto/imagem/vídeo), seguir/deixar de seguir, ver o newsfeed (ordem cronológica reversa), curtir/comentar, notificar o dono do post.
+> - Não funcionais: alta disponibilidade (99,999%), consistência eventual (~2s de atraso é aceitável), baixa latência (feed carrega em 1–2s), alta escalabilidade (500M DAU / 2B MAU), extensibilidade e boa usabilidade (renderização rápida de mídia).
+> - Dica de entrevista: sempre alinhe com o entrevistador o número de usuários e o nível de consistência assumidos — são suposições, não fatos, e o entrevistador quer ver você negociando o escopo.

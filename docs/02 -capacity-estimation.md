@@ -52,3 +52,39 @@ Com base nessas duas suposições e no throughput de 50 milhões de requisiçõe
 Esse é o armazenamento total em um dia. Mas e em 10 anos? Basta multiplicar os 216 TB por dia por 365 × 10, o que é igual a 750 petabytes.
 
 ## Memória (Cache)
+
+Para evitar a demora de acessar o banco de dados, usamos o cache. A quantidade de armazenamento diário a 0,01 x 216 TB, resultando em algo em torno de 2 TB por dia.
+
+## Rede / Bandwidth (Ingress e Egress)
+
+Aqui vamos ver a estimativa de rede (network) ou largura de banda (bandwidth). Fazemos essa estimativa para termos nossão de quanto de dado flui para dentro e fora do nosso sistema por segundo. 
+
+Os dados de entrada chamadas de ingress, e os dados de saída chamadas de egress.
+
+### Ingress
+
+O dado de entrada em um dia acaba sendo armazenado. Para sabermos o valor do igress precisamos do valor por segundoo, logo pegamos o valor total do dia 216 TB e deividimos por 24 * 60 * 60, o que da 2,5 GB por segundo.
+
+### Egress 
+
+O dado de saída do sistema por segundo - basicamente , todo dado que está sendo lido. Pela estimatiiva de throughput, sabemos que existem 50 bilhões de requisições de leitura por dia. Multiplicando esse número pelo tamanho médio de um post, obtemos quanto dado sai do sistema em um dia.
+
+Multiplicando as 50 bilhões de requisições de leitura por dia por 4,3 MB, obtemos 216 petabytes por dia de dado saindo do sistema. Dividindo esse número por 24 × 60 × 60, chegamos ao egress: 2,5 TB por segundo.
+
+| Direção | Por dia | Por segundo |
+| --- | --- | --- |
+| Ingress (entrada) | 216 TB | **2,5 GB/s** |
+| Egress (saída) | 216 PB | **2,5 TB/s** |
+
+Com isso, fechamos os cinco pontos da estimativa de capacidade do nosso sistema de newsfeed: DAU/MAU, throughput, armazenamento, memória (cache) e rede/bandwidth.
+
+---
+
+> **Resumo rápido — pontos-chave para a entrevista**
+>
+> - DAU/MAU: 500 milhões de usuários ativos diários, 2 bilhões mensais.
+> - Throughput: ~50 milhões de requisições de escrita/dia (criação de post) e ~50 bilhões de requisições de leitura/dia (abrir o feed).
+> - Storage: 216 TB/dia (750 PB em 10 anos) — vídeo domina o total mesmo sendo só 20% dos posts, por ser o formato mais pesado.
+> - Memória (cache): ~2 TB/dia (1% do armazenamento diário).
+> - Rede: ingress 2,5 GB/s, egress 2,5 TB/s — egress é ~1000× maior porque cada post é lido muito mais vezes do que é escrito.
+> - Dica de entrevista: identifique sempre o gargalo (aqui, egress/leitura) — é ele que vai guiar decisões de cache e CDN no high-level design.
