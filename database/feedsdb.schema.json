@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "FeedsDB",
+  "description": "Armazena o feed de posts pré-computado de cada usuário (resultado do fan-out na escrita). Banco NoSQL (mesma alta escala de ~50 milhões de escritas/dia e padrão de consulta simples por user ID, sem estrutura fixa, já que os posts referenciados também não têm). Indexado por (x-indexed-by): userId.",
+  "x-indexed-by": "userId",
+  "type": "object",
+  "properties": {
+    "userId": {
+      "type": "string",
+      "description": "Identifica o usuário dono do newsfeed."
+    },
+    "feedItems": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Lista de posts que compõem o newsfeed desse usuário (cada item aponta para um post e seus dados)."
+    }
+  },
+  "required": ["userId", "feedItems"]
+}

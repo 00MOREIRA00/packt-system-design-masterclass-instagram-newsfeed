@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "FollowDB",
+  "description": "Armazena as conexões (relacionamentos follower/followee) entre usuários, modeladas como um grafo — usuários como nós, e cada 'segue' como uma aresta direcionada. Banco GraphDB (precisa suportar um grande número de usuários e relacionamentos, e encontrar eficientemente seguidores/seguidos de um usuário — consulta de grafo nativa). Indexado por (x-indexed-by): userId.",
+  "x-indexed-by": "userId",
+  "type": "object",
+  "properties": {
+    "userId": {
+      "type": "string",
+      "description": "Identifica o usuário."
+    },
+    "followers": {
+      "type": "array",
+      "description": "Lista de quem segue esse usuário — cada item com o ID do seguidor e o timestamp de quando passou a segui-lo.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "ID do usuário seguidor."
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Momento em que passou a seguir este usuário."
+          }
+        },
+        "required": ["id", "timestamp"]
+      }
+    },
+    "followees": {
+      "type": "array",
+      "description": "Lista de quem esse usuário segue — cada item com o ID do seguido e o respectivo timestamp.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "ID do usuário seguido."
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Momento em que este usuário passou a segui-lo."
+          }
+        },
+        "required": ["id", "timestamp"]
+      }
+    }
+  },
+  "required": ["userId", "followers", "followees"]
+}

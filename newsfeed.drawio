@@ -1,0 +1,667 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36" pages="6">
+  <diagram name="Follow / Unfollow" id="9npn9xBO74zyYwiO2_R9">
+    <mxGraphModel dx="1414" dy="791" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="IZQ0A0-7uU52PRGrtLu8-3" edge="1" parent="1" source="IZQ0A0-7uU52PRGrtLu8-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="IZQ0A0-7uU52PRGrtLu8-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IZQ0A0-7uU52PRGrtLu8-4" connectable="0" parent="IZQ0A0-7uU52PRGrtLu8-3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="POST /v1/follow&lt;div&gt;(followerId / followeeId)&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1639" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IZQ0A0-7uU52PRGrtLu8-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Cliente" vertex="1">
+          <mxGeometry height="50" width="80" x="460" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="IZQ0A0-7uU52PRGrtLu8-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="API Gateway" vertex="1">
+          <mxGeometry height="50" width="96" x="750" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="IZQ0A0-7uU52PRGrtLu8-9" edge="1" parent="1" source="IZQ0A0-7uU52PRGrtLu8-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" target="IZQ0A0-7uU52PRGrtLu8-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IZQ0A0-7uU52PRGrtLu8-6" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" value="Load Balancer" vertex="1">
+          <mxGeometry height="60" width="150" x="930" y="195" as="geometry" />
+        </mxCell>
+        <mxCell id="IZQ0A0-7uU52PRGrtLu8-7" edge="1" parent="1" source="IZQ0A0-7uU52PRGrtLu8-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="IZQ0A0-7uU52PRGrtLu8-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IZQ0A0-7uU52PRGrtLu8-11" edge="1" parent="1" source="IZQ0A0-7uU52PRGrtLu8-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="IZQ0A0-7uU52PRGrtLu8-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IZQ0A0-7uU52PRGrtLu8-12" connectable="0" parent="IZQ0A0-7uU52PRGrtLu8-11" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="grava relação" vertex="1">
+          <mxGeometry relative="1" x="-0.044" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IZQ0A0-7uU52PRGrtLu8-15" edge="1" parent="1" source="IZQ0A0-7uU52PRGrtLu8-8" style="edgeStyle=orthogonalEdgeStyle;shape=wire;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;curved=1;strokeColor=default;strokeWidth=1;fillColor=default;" target="IZQ0A0-7uU52PRGrtLu8-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1200" y="290" />
+              <mxPoint x="500" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IZQ0A0-7uU52PRGrtLu8-19" edge="1" parent="1" source="IZQ0A0-7uU52PRGrtLu8-8" style="edgeStyle=orthogonalEdgeStyle;shape=wire;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;curved=0;strokeColor=none;" target="IZQ0A0-7uU52PRGrtLu8-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IZQ0A0-7uU52PRGrtLu8-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Follow Service" vertex="1">
+          <mxGeometry height="35" width="120" x="1140" y="207.5" as="geometry" />
+        </mxCell>
+        <mxCell id="IZQ0A0-7uU52PRGrtLu8-10" parent="1" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" value="FollowDB&lt;div&gt;(Graph DB)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="80" x="1400" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="IZQ0A0-7uU52PRGrtLu8-21" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="confirmação" vertex="1">
+          <mxGeometry height="30" width="60" x="820" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="IZQ0A0-7uU52PRGrtLu8-22" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=none;labelBorderColor=none;textShadow=1;fillColor=#cce5ff;strokeColor=#36393d;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Fluxo&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Usuário inicia o fluxo de seguir um usuário e/ou de deixar de seguir um usuário.&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;" vertex="1">
+          <mxGeometry height="110" width="460" x="460" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="IZQ0A0-7uU52PRGrtLu8-23" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#cce5ff;strokeColor=#36393d;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Processo&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;&quot;&gt;Passo 1:&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-weight: normal;&quot;&gt;Quando um usuário tenta seguir outro usuário, uma requisição POST é enviada diretamente ao API Gateway&lt;/span&gt;&lt;/font&gt;&lt;/h1&gt;&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Passo 2:&lt;span style=&quot;font-weight: 400;&quot;&gt; O API gateway lida com essa requisição de entrada de forma organizada e a encaminha para o follow service através de um load balancer.&lt;/span&gt;&lt;/font&gt;&lt;/h1&gt;&lt;div&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;Passo 3:&lt;/b&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent; color: rgb(0, 0, 0);&quot;&gt;&lt;font style=&quot;&quot;&gt;O follow service atualiza o followDB (banco de dados de follow), armazenando o relacionamento&lt;/font&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent; color: rgb(0, 0, 0);&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent; color: rgb(0, 0, 0);&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;b&gt;Passo 4:&lt;/b&gt;&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent; color: rgb(0, 0, 0);&quot;&gt;&lt;font style=&quot;&quot;&gt;O cliente recebe a confirmação de que a requisição de follow foi bem-sucedida.&lt;/font&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="310" width="570" x="460" y="330" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Read Newsfeed" id="Wo3deFbrbEddLPUWESSd">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="ZPjAD2DASo2O7Q2uIRb9-0" />
+        <mxCell id="ZPjAD2DASo2O7Q2uIRb9-1" parent="ZPjAD2DASo2O7Q2uIRb9-0" />
+        <mxCell id="ZPjAD2DASo2O7Q2uIRb9-2" edge="1" parent="ZPjAD2DASo2O7Q2uIRb9-1" source="ZPjAD2DASo2O7Q2uIRb9-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="ZPjAD2DASo2O7Q2uIRb9-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZPjAD2DASo2O7Q2uIRb9-3" connectable="0" parent="ZPjAD2DASo2O7Q2uIRb9-2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="GET /v1/feed/{userId}" vertex="1">
+          <mxGeometry relative="1" x="-0.1639" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZPjAD2DASo2O7Q2uIRb9-4" parent="ZPjAD2DASo2O7Q2uIRb9-1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Cliente" vertex="1">
+          <mxGeometry height="50" width="80" x="160" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="ZPjAD2DASo2O7Q2uIRb9-5" parent="ZPjAD2DASo2O7Q2uIRb9-1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="API Gateway" vertex="1">
+          <mxGeometry height="50" width="96" x="450" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="ZPjAD2DASo2O7Q2uIRb9-6" edge="1" parent="ZPjAD2DASo2O7Q2uIRb9-1" source="ZPjAD2DASo2O7Q2uIRb9-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" target="ZPjAD2DASo2O7Q2uIRb9-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZPjAD2DASo2O7Q2uIRb9-7" parent="ZPjAD2DASo2O7Q2uIRb9-1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" value="Load Balancer" vertex="1">
+          <mxGeometry height="60" width="150" x="630" y="495" as="geometry" />
+        </mxCell>
+        <mxCell id="ZPjAD2DASo2O7Q2uIRb9-8" edge="1" parent="ZPjAD2DASo2O7Q2uIRb9-1" source="ZPjAD2DASo2O7Q2uIRb9-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="ZPjAD2DASo2O7Q2uIRb9-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZPjAD2DASo2O7Q2uIRb9-9" edge="1" parent="ZPjAD2DASo2O7Q2uIRb9-1" source="ZPjAD2DASo2O7Q2uIRb9-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="ZPjAD2DASo2O7Q2uIRb9-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZPjAD2DASo2O7Q2uIRb9-10" connectable="0" parent="ZPjAD2DASo2O7Q2uIRb9-9" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="2 busca posts" vertex="1">
+          <mxGeometry relative="1" x="-0.044" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZPjAD2DASo2O7Q2uIRb9-11" edge="1" parent="ZPjAD2DASo2O7Q2uIRb9-1" source="ZPjAD2DASo2O7Q2uIRb9-13" style="edgeStyle=orthogonalEdgeStyle;shape=wire;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;curved=1;strokeColor=default;strokeWidth=1;fillColor=default;" target="ZPjAD2DASo2O7Q2uIRb9-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="900" y="590" />
+              <mxPoint x="200" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZPjAD2DASo2O7Q2uIRb9-12" edge="1" parent="ZPjAD2DASo2O7Q2uIRb9-1" source="ZPjAD2DASo2O7Q2uIRb9-13" style="edgeStyle=orthogonalEdgeStyle;shape=wire;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;curved=0;strokeColor=none;" target="ZPjAD2DASo2O7Q2uIRb9-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KFWkPycam5Kh-Curlgb2-1" edge="1" parent="ZPjAD2DASo2O7Q2uIRb9-1" source="ZPjAD2DASo2O7Q2uIRb9-13" style="edgeStyle=orthogonalEdgeStyle;shape=wire;rounded=0;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" target="KFWkPycam5Kh-Curlgb2-0">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1025" y="525" />
+              <mxPoint x="1025" y="445" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KFWkPycam5Kh-Curlgb2-2" connectable="0" parent="KFWkPycam5Kh-Curlgb2-1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1 quem eu sigo ?&amp;nbsp;" vertex="1">
+          <mxGeometry relative="1" x="0.3647" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZPjAD2DASo2O7Q2uIRb9-13" parent="ZPjAD2DASo2O7Q2uIRb9-1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="NewsFeedReader Service" vertex="1">
+          <mxGeometry height="35" width="120" x="840" y="507.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ZPjAD2DASo2O7Q2uIRb9-14" parent="ZPjAD2DASo2O7Q2uIRb9-1" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" value="PostsDB&lt;div&gt;(NoSQL DB)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="80" x="1090" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="ZPjAD2DASo2O7Q2uIRb9-15" parent="ZPjAD2DASo2O7Q2uIRb9-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="3 ordem e retorna" vertex="1">
+          <mxGeometry height="30" width="110" x="520" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="ZPjAD2DASo2O7Q2uIRb9-16" parent="ZPjAD2DASo2O7Q2uIRb9-1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=none;labelBorderColor=none;textShadow=1;fillColor=#cce5ff;strokeColor=#36393d;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Fluxo&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Usuário&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 15px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;inicia o fluxo de&lt;/span&gt;&lt;span style=&quot;font-size: 15px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;&amp;nbsp;leitura do feed.&lt;/span&gt;&lt;/h1&gt;" vertex="1">
+          <mxGeometry height="110" width="460" x="160" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="ZPjAD2DASo2O7Q2uIRb9-17" parent="ZPjAD2DASo2O7Q2uIRb9-1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#cce5ff;strokeColor=#36393d;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Processo&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;&quot;&gt;Passo 1:&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent; font-weight: normal; color: rgb(0, 0, 0);&quot;&gt;&lt;font style=&quot;&quot;&gt;O usuário envia uma requisição para ler o seu newsfeed.&lt;/font&gt;&lt;/span&gt;&lt;/font&gt;&lt;/h1&gt;&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Passo 2:&amp;nbsp;&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent; font-weight: normal; color: rgb(0, 0, 0);&quot;&gt;A requisição chega ao news feed reader service. Para conseguir todos os posts necessários, o news feed reader service realiza três sub-passos:&lt;/span&gt;&lt;span style=&quot;font-weight: 400; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;/font&gt;&lt;/h1&gt;&lt;div&gt;&lt;ol class=&quot;code-line&quot; dir=&quot;auto&quot; style=&quot;margin-top: 0px; margin-bottom: 0.7em; position: relative; font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif;&quot;&gt;&lt;li class=&quot;code-line&quot; dir=&quot;auto&quot; style=&quot;position: relative;&quot;&gt;&lt;p class=&quot;code-line&quot; dir=&quot;auto&quot; style=&quot;margin-top: 0px; margin-bottom: 0.7em; position: relative;&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Busca todas as contas seguidas no followDB — no exemplo, uma lista com B e C.&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li class=&quot;code-line&quot; dir=&quot;auto&quot; style=&quot;position: relative;&quot;&gt;&lt;p class=&quot;code-line&quot; dir=&quot;auto&quot; style=&quot;margin-top: 0px; margin-bottom: 0.7em; position: relative;&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Lê os posts dessas contas usando o PostsDB.&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li class=&quot;code-line&quot; dir=&quot;auto&quot; style=&quot;position: relative;&quot;&gt;&lt;p class=&quot;code-line&quot; dir=&quot;auto&quot; style=&quot;margin-top: 0px; margin-bottom: 0.7em; position: relative;&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Ordena todos os posts em ordem cronológica reversa (do mais novo para o mais antigo) — necessário porque, depois dos dois primeiros sub-passos, o news feed reader service tem uma coleção de posts de B e C organizados aleatoriamente, sem nenhuma ordenação.&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="310" width="570" x="160" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="KFWkPycam5Kh-Curlgb2-0" parent="ZPjAD2DASo2O7Q2uIRb9-1" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" value="FollowDB&lt;div&gt;(Graph DB)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="80" x="1090" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="eXjkPu2F_RSxJcqSW4fp-0" parent="ZPjAD2DASo2O7Q2uIRb9-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#000000;" value="&lt;b&gt;MELHORIA&lt;/b&gt;" vertex="1">
+          <mxGeometry height="20" width="570" x="160" y="980" as="geometry" />
+        </mxCell>
+        <mxCell id="eXjkPu2F_RSxJcqSW4fp-1" edge="1" parent="ZPjAD2DASo2O7Q2uIRb9-1" source="eXjkPu2F_RSxJcqSW4fp-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="eXjkPu2F_RSxJcqSW4fp-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eXjkPu2F_RSxJcqSW4fp-2" connectable="0" parent="eXjkPu2F_RSxJcqSW4fp-1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="GET /v1/feed/{userId}" vertex="1">
+          <mxGeometry relative="1" x="-0.1639" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eXjkPu2F_RSxJcqSW4fp-19" edge="1" parent="ZPjAD2DASo2O7Q2uIRb9-1" source="eXjkPu2F_RSxJcqSW4fp-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=1;" target="eXjkPu2F_RSxJcqSW4fp-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="228.3" y="1165" />
+              <mxPoint x="340" y="1165" />
+              <mxPoint x="340" y="1167.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eXjkPu2F_RSxJcqSW4fp-3" parent="ZPjAD2DASo2O7Q2uIRb9-1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Cliente" vertex="1">
+          <mxGeometry height="50" width="80" x="160" y="1070" as="geometry" />
+        </mxCell>
+        <mxCell id="eXjkPu2F_RSxJcqSW4fp-4" parent="ZPjAD2DASo2O7Q2uIRb9-1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="API Gateway" vertex="1">
+          <mxGeometry height="35" width="96" x="450" y="1085" as="geometry" />
+        </mxCell>
+        <mxCell id="eXjkPu2F_RSxJcqSW4fp-7" edge="1" parent="ZPjAD2DASo2O7Q2uIRb9-1" source="eXjkPu2F_RSxJcqSW4fp-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="eXjkPu2F_RSxJcqSW4fp-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="630" y="1095" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eXjkPu2F_RSxJcqSW4fp-10" edge="1" parent="ZPjAD2DASo2O7Q2uIRb9-1" source="eXjkPu2F_RSxJcqSW4fp-14" style="edgeStyle=orthogonalEdgeStyle;shape=wire;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;curved=1;strokeColor=default;strokeWidth=1;fillColor=default;" target="eXjkPu2F_RSxJcqSW4fp-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="730" y="1135" />
+              <mxPoint x="680" y="1135" />
+              <mxPoint x="680" y="1215" />
+              <mxPoint x="200" y="1215" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eXjkPu2F_RSxJcqSW4fp-14" parent="ZPjAD2DASo2O7Q2uIRb9-1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="NewsFeedReader Service" vertex="1">
+          <mxGeometry height="35" width="120" x="670" y="1085" as="geometry" />
+        </mxCell>
+        <mxCell id="eXjkPu2F_RSxJcqSW4fp-15" parent="ZPjAD2DASo2O7Q2uIRb9-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="feed&amp;nbsp; (com URLs)" vertex="1">
+          <mxGeometry height="30" width="110" x="400" y="1215" as="geometry" />
+        </mxCell>
+        <mxCell id="eXjkPu2F_RSxJcqSW4fp-25" edge="1" parent="ZPjAD2DASo2O7Q2uIRb9-1" source="eXjkPu2F_RSxJcqSW4fp-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;curved=1;" target="eXjkPu2F_RSxJcqSW4fp-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eXjkPu2F_RSxJcqSW4fp-16" parent="ZPjAD2DASo2O7Q2uIRb9-1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="CDN" vertex="1">
+          <mxGeometry height="35" width="96" x="450" y="1150" as="geometry" />
+        </mxCell>
+        <mxCell id="eXjkPu2F_RSxJcqSW4fp-21" parent="ZPjAD2DASo2O7Q2uIRb9-1" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Cache_Redis_Product.svg;" value="" vertex="1">
+          <mxGeometry height="50" width="59.52" x="990" y="1079.5" as="geometry" />
+        </mxCell>
+        <mxCell id="eXjkPu2F_RSxJcqSW4fp-22" edge="1" parent="ZPjAD2DASo2O7Q2uIRb9-1" source="eXjkPu2F_RSxJcqSW4fp-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.46;entryDx=0;entryDy=0;entryPerimeter=0;" target="eXjkPu2F_RSxJcqSW4fp-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eXjkPu2F_RSxJcqSW4fp-23" parent="ZPjAD2DASo2O7Q2uIRb9-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="busca feed pronto" vertex="1">
+          <mxGeometry height="30" width="110" x="835" y="1079.5" as="geometry" />
+        </mxCell>
+        <mxCell id="eXjkPu2F_RSxJcqSW4fp-24" parent="ZPjAD2DASo2O7Q2uIRb9-1" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" value="Object Storage" vertex="1">
+          <mxGeometry height="70" width="96" x="770" y="1145" as="geometry" />
+        </mxCell>
+        <mxCell id="eXjkPu2F_RSxJcqSW4fp-26" parent="ZPjAD2DASo2O7Q2uIRb9-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="se não tiver no cdn" vertex="1">
+          <mxGeometry height="30" width="130" x="590" y="1145" as="geometry" />
+        </mxCell>
+        <mxCell id="eXjkPu2F_RSxJcqSW4fp-27" parent="ZPjAD2DASo2O7Q2uIRb9-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="busca imagens/vídeos" vertex="1">
+          <mxGeometry height="30" width="140" x="280" y="1135" as="geometry" />
+        </mxCell>
+        <mxCell id="8cvuOirCfybw8arp-mBm-0" parent="ZPjAD2DASo2O7Q2uIRb9-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=light-dark(#100f0f, #ededed);align=left;verticalAlign=top;labelBackgroundColor=none;" value="&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;MELHORIA&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: bold; font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; font-size: 14px; color: rgb(0, 0, 0);&quot;&gt;Passo 1&lt;/span&gt;&lt;span style=&quot;font-weight: bold; color: rgb(187, 187, 187); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; font-size: 14px;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; font-size: 14px;&quot;&gt; &lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Quando o usuário tenta carregar o seu newsfeed, uma requisição GET é enviada ao API gateway, no endpoint &quot;/v1/feed/{userId}&quot; — o mesmo que vimos na seção de design da API&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-weight: bold; font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; font-size: 14px;&quot;&gt;Passo 2&lt;/span&gt;&lt;span style=&quot;font-weight: bold; color: rgb(187, 187, 187); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; font-size: 14px;&quot;&gt;.&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; font-size: 14px;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; font-size: 14px;&quot;&gt;&lt;/span&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; font-size: 14px; background-color: transparent;&quot;&gt;O API gateway recebe essa requisição e a encaminha para o NewsFeedReader service através do load balancer — um serviço especializado apenas em ler os newsfeeds.&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; font-size: 14px; background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-weight: bold; font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; font-size: 14px;&quot;&gt;Passo 3&lt;/span&gt;&lt;span style=&quot;font-weight: bold; color: rgb(187, 187, 187); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; font-size: 14px;&quot;&gt;.&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; font-size: 14px; background-color: transparent; color: rgb(0, 0, 0);&quot;&gt;O NewsFeedReader service busca o newsfeed já pré-construído no feeds cache. Como vimos no high-level design de criação de post, todo post é salvo no feedsDB e no feeds cache — então aqui o serviço só precisa buscar o newsfeed pré-pronto no cache.&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(187, 187, 187), rgb(76, 76, 76)); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; font-size: 14px; font-weight: bold; background-color: transparent;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: light-dark(rgb(187, 187, 187), rgb(76, 76, 76)); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; font-size: 14px; font-weight: bold; background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-weight: bold; font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; font-size: 14px;&quot;&gt;Passo 4&lt;/span&gt;&lt;span style=&quot;font-weight: bold; color: rgb(187, 187, 187); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; font-size: 14px;&quot;&gt;.&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; font-size: 14px; font-weight: bold; background-color: transparent;&quot;&gt;&lt;/span&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; font-size: 14px; background-color: transparent; color: rgb(0, 0, 0);&quot;&gt;O NewsFeedReader service devolve o newsfeed ao usuário. Mas esse newsfeed contém apenas as URLs das imagens e vídeos dos posts, não os arquivos de mídia em si. Por isso, o cliente busca a imagem e o vídeo reais na CDN usando essas URLs; se o conteúdo não estiver na CDN, ela busca no object storage. Só então o usuário consegue ver o seu newsfeed completo.&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="340" width="570" x="160" y="1260" as="geometry" />
+        </mxCell>
+        <mxCell id="2T3yjdBV9X0LRPJmFuHs-0" parent="ZPjAD2DASo2O7Q2uIRb9-1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font color=&quot;#080808&quot; style=&quot;font-size: 15px;&quot;&gt;Observação&lt;/font&gt;&lt;/h1&gt;&lt;div&gt;&lt;font color=&quot;#080808&quot;&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;CDN (Content Delivery Network) é uma rede de servidores cache espalhados pelo mundo. Elas guardam cópias de conteúdos estáticos.&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#080808&quot;&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#080808&quot;&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;Pense&amp;nbsp; object storage como o armazém central. Elas existem pois o maior custo de entregar mídia é a distância física&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#080808&quot;&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="810" width="570" x="840" y="1260" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="KxkG4HMcJO9KmGRm4wUU" name="Create Text Post">
+    <mxGraphModel dx="1414" dy="791" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sLdT72pNXIufgefm2ZWe-1" edge="1" parent="1" source="sLdT72pNXIufgefm2ZWe-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="sLdT72pNXIufgefm2ZWe-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sLdT72pNXIufgefm2ZWe-2" connectable="0" parent="sLdT72pNXIufgefm2ZWe-1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="POST /v1/posts&lt;div&gt;(userId, text, hashtag)&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1639" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sLdT72pNXIufgefm2ZWe-3" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Cliente" vertex="1">
+          <mxGeometry height="50" width="80" x="160" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="sLdT72pNXIufgefm2ZWe-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="API Gateway" vertex="1">
+          <mxGeometry height="50" width="96" x="450" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="sLdT72pNXIufgefm2ZWe-5" edge="1" parent="1" source="sLdT72pNXIufgefm2ZWe-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" target="sLdT72pNXIufgefm2ZWe-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sLdT72pNXIufgefm2ZWe-6" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" value="Load Balancer" vertex="1">
+          <mxGeometry height="60" width="150" x="630" y="495" as="geometry" />
+        </mxCell>
+        <mxCell id="sLdT72pNXIufgefm2ZWe-7" edge="1" parent="1" source="sLdT72pNXIufgefm2ZWe-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="sLdT72pNXIufgefm2ZWe-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sLdT72pNXIufgefm2ZWe-8" edge="1" parent="1" source="sLdT72pNXIufgefm2ZWe-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="sLdT72pNXIufgefm2ZWe-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sLdT72pNXIufgefm2ZWe-9" connectable="0" parent="sLdT72pNXIufgefm2ZWe-8" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="grava relação" vertex="1">
+          <mxGeometry relative="1" x="-0.044" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sLdT72pNXIufgefm2ZWe-10" edge="1" parent="1" source="sLdT72pNXIufgefm2ZWe-12" style="edgeStyle=orthogonalEdgeStyle;shape=wire;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;curved=1;strokeColor=default;strokeWidth=1;fillColor=default;" target="sLdT72pNXIufgefm2ZWe-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="900" y="590" />
+              <mxPoint x="200" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sLdT72pNXIufgefm2ZWe-11" edge="1" parent="1" source="sLdT72pNXIufgefm2ZWe-12" style="edgeStyle=orthogonalEdgeStyle;shape=wire;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;curved=0;strokeColor=none;" target="sLdT72pNXIufgefm2ZWe-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sLdT72pNXIufgefm2ZWe-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Post Writer Service" vertex="1">
+          <mxGeometry height="35" width="120" x="840" y="507.5" as="geometry" />
+        </mxCell>
+        <mxCell id="sLdT72pNXIufgefm2ZWe-13" parent="1" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" value="PostsDB&lt;div&gt;(NoSQL DB)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="80" x="1100" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="sLdT72pNXIufgefm2ZWe-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="confirmação" vertex="1">
+          <mxGeometry height="30" width="60" x="520" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="sLdT72pNXIufgefm2ZWe-15" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=none;labelBorderColor=none;textShadow=1;fillColor=#cce5ff;strokeColor=#36393d;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Fluxo&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Usuário&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 15px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;inicia o fluxo de&lt;/span&gt;&lt;span style=&quot;font-size: 15px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;&amp;nbsp;criar um Post de texto&lt;/span&gt;&lt;/h1&gt;" vertex="1">
+          <mxGeometry height="110" width="460" x="160" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="sLdT72pNXIufgefm2ZWe-16" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#cce5ff;strokeColor=#36393d;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Processo&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Passo 1: &lt;span style=&quot;font-weight: normal;&quot;&gt;Quando um usuário escreve um post de texto e clica em enviar, uma requisição POST é enviada com os detalhes do post.&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Passo 2:&lt;span style=&quot;font-weight: 400;&quot;&gt;&amp;nbsp;O API gateway lida com essa requisição de entrada e a encaminha para o post writer service através de um load balancer&lt;/span&gt;&lt;/font&gt;&lt;/h1&gt;&lt;div&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;Passo 3:&lt;/b&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent; color: rgb(0, 0, 0);&quot;&gt;&lt;font style=&quot;&quot;&gt;O post writer service salva o novo post no banco de dados, chamado de PostsDB.&lt;/font&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent; color: rgb(0, 0, 0);&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent; color: rgb(0, 0, 0);&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;b&gt;Passo 4:&lt;/b&gt;&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent; color: rgb(0, 0, 0);&quot;&gt;&lt;font style=&quot;&quot;&gt;O cliente recebe a confirmação de que o post foi criado com sucesso.&lt;/font&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="310" width="570" x="160" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="AKepsDW-8kDpoW2XCkPR-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#000000;" value="&lt;b&gt;MELHORIA&lt;/b&gt;" vertex="1">
+          <mxGeometry height="20" width="570" x="160" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="AKepsDW-8kDpoW2XCkPR-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=default;align=left;verticalAlign=top;labelBackgroundColor=none;" value="&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;MELHORIA&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;Passo 5:&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, &amp;quot;Noto Sans&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Assim que os posts são adicionados ao PostsDB, o post writer service também coloca esse evento — post ID e user ID — em uma fila de mensagens (message queue). Por exemplo, se o user ID for &quot;usuário A&quot; e o post ID for &quot;post A&quot;, ele adiciona &quot;post A, usuário A&quot; na fila.&lt;/font&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, &amp;quot;Noto Sans&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0); font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;pre style=&quot;margin-top: 0px; position: relative; border-color: currentcolor; border-style: none; border-width: medium; border-image: initial; padding: 14px; border-radius: 6px; overflow: auto; color: rgb(240, 246, 252); margin-bottom: 14px; font-family: ui-monospace, SFMono-Regular, &amp;quot;SF Mono&amp;quot;, Menlo, Consolas, &amp;quot;Liberation Mono&amp;quot;, monospace; overflow-wrap: normal; line-height: 1.45; white-space: pre-wrap;&quot;&gt;&lt;code class=&quot;code-line language-json&quot; dir=&quot;auto&quot; style=&quot;font-family: ui-monospace, SFMono-Regular, &amp;quot;SF Mono&amp;quot;, Menlo, Consolas, &amp;quot;Liberation Mono&amp;quot;, monospace; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(0, 0, 0); padding: 0px; border-radius: 6px; line-height: inherit; display: inline; tab-size: 4; margin: 0px; white-space: pre; word-break: normal; border: 0px; overflow: visible; overflow-wrap: normal;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;span class=&quot;hljs-punctuation&quot; style=&quot;&quot;&gt;{&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;hljs-attr&quot; style=&quot;color: rgb(121, 192, 255);&quot;&gt;&quot;postId&quot;&lt;/span&gt;&lt;span class=&quot;hljs-punctuation&quot; style=&quot;&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;hljs-string&quot; style=&quot;color: rgb(165, 214, 255);&quot;&gt;&quot;post_A&quot;&lt;/span&gt;&lt;span class=&quot;hljs-punctuation&quot; style=&quot;&quot;&gt;,&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;hljs-attr&quot; style=&quot;color: rgb(121, 192, 255);&quot;&gt;&quot;userId&quot;&lt;/span&gt;&lt;span class=&quot;hljs-punctuation&quot; style=&quot;&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;hljs-string&quot; style=&quot;color: rgb(165, 214, 255);&quot;&gt;&quot;usuario_A&quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;hljs-punctuation&quot; style=&quot;&quot;&gt;}&lt;/span&gt;&lt;/font&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, &amp;quot;Noto Sans&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0); font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, &amp;quot;Noto Sans&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0); font-size: 15px;&quot;&gt;&amp;gt; Agora temos um novo serviço responsável por criar o newsfeed&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, &amp;quot;Noto Sans&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0); font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, &amp;quot;Noto Sans&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0); font-size: 15px;&quot;&gt;Passo 6:&amp;nbsp; O newsfeed generator service retira (pull) esse evento da fila de mensagens para processamento&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, &amp;quot;Noto Sans&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0); font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, &amp;quot;Noto Sans&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0); font-size: 15px;&quot;&gt;Passo 7: O newsfeed generator service busca os dados do novo post no PostsDB, usando o postID. Agora ele tem o post completo.&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, &amp;quot;Noto Sans&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0); font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, &amp;quot;Noto Sans&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Passo 8:&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, &amp;quot;Noto Sans&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;O news feed generator service encontra todos os seguidores desse usuário usando o followDB. Digamos que o usuário A é seguido pelos usuários B e C — o serviço obtém essa lista (usuário B, usuário C) do followDB.&lt;/font&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, &amp;quot;Noto Sans&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0); font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;p class=&quot;code-line&quot; dir=&quot;auto&quot; style=&quot;margin-top: 0px; margin-bottom: 14px; font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, &amp;quot;Noto Sans&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;span style=&quot;font-weight: 600;&quot;&gt;Passo 9.&lt;/span&gt; O news feed generator service adiciona esse novo post ao feed de todos os seguidores — ou seja, adiciona o post do usuário A ao newsfeed do usuário B e do usuário C. Todos os newsfeeds de todos os usuários são armazenados no feedsDB. Uma entrada nesse banco é um mapeamento de user ID para o newsfeed: por exemplo, para o usuário B, teríamos um mapeamento de &quot;usuário B&quot; para, digamos, post 1, post 2, post 3 — o newsfeed completo dele.&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;code-line&quot; dir=&quot;auto&quot; style=&quot;margin-top: 0px; margin-bottom: 14px; font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, &amp;quot;Noto Sans&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;span style=&quot;font-weight: 600;&quot;&gt;Passo 10 (e último).&lt;/span&gt; A mesma informação é então atualizada no feeds cache, para acesso mais rápido.&lt;/font&gt;&lt;/p&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="721" width="570" x="160" y="1029" as="geometry" />
+        </mxCell>
+        <mxCell id="AKepsDW-8kDpoW2XCkPR-3" edge="1" parent="1" source="AKepsDW-8kDpoW2XCkPR-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="AKepsDW-8kDpoW2XCkPR-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AKepsDW-8kDpoW2XCkPR-4" connectable="0" parent="AKepsDW-8kDpoW2XCkPR-3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="POST /v1/posts&lt;div&gt;(userId, text, hashtag)&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1639" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AKepsDW-8kDpoW2XCkPR-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Cliente" vertex="1">
+          <mxGeometry height="50" width="80" x="150" y="2085" as="geometry" />
+        </mxCell>
+        <mxCell id="AKepsDW-8kDpoW2XCkPR-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="API Gateway" vertex="1">
+          <mxGeometry height="50" width="96" x="440" y="2085" as="geometry" />
+        </mxCell>
+        <mxCell id="AKepsDW-8kDpoW2XCkPR-7" edge="1" parent="1" source="AKepsDW-8kDpoW2XCkPR-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" target="AKepsDW-8kDpoW2XCkPR-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AKepsDW-8kDpoW2XCkPR-8" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" value="Load Balancer" vertex="1">
+          <mxGeometry height="60" width="150" x="620" y="2080" as="geometry" />
+        </mxCell>
+        <mxCell id="AKepsDW-8kDpoW2XCkPR-9" edge="1" parent="1" source="AKepsDW-8kDpoW2XCkPR-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="AKepsDW-8kDpoW2XCkPR-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AKepsDW-8kDpoW2XCkPR-10" edge="1" parent="1" source="AKepsDW-8kDpoW2XCkPR-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1090" y="2110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AKepsDW-8kDpoW2XCkPR-11" connectable="0" parent="AKepsDW-8kDpoW2XCkPR-10" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="grava relação" vertex="1">
+          <mxGeometry relative="1" x="-0.044" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AKepsDW-8kDpoW2XCkPR-12" edge="1" parent="1" source="AKepsDW-8kDpoW2XCkPR-14" style="edgeStyle=orthogonalEdgeStyle;shape=wire;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;curved=1;strokeColor=default;strokeWidth=1;fillColor=default;" target="AKepsDW-8kDpoW2XCkPR-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="890" y="2175" />
+              <mxPoint x="190" y="2175" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AKepsDW-8kDpoW2XCkPR-13" edge="1" parent="1" source="AKepsDW-8kDpoW2XCkPR-14" style="edgeStyle=orthogonalEdgeStyle;shape=wire;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;curved=0;strokeColor=none;" target="AKepsDW-8kDpoW2XCkPR-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AKepsDW-8kDpoW2XCkPR-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Post Writer Service" vertex="1">
+          <mxGeometry height="35" width="120" x="830" y="2092.5" as="geometry" />
+        </mxCell>
+        <mxCell id="AKepsDW-8kDpoW2XCkPR-15" parent="1" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" value="PostsDB&lt;div&gt;(NoSQL DB)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="80" x="1090" y="2070" as="geometry" />
+        </mxCell>
+        <mxCell id="AKepsDW-8kDpoW2XCkPR-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="confirmação" vertex="1">
+          <mxGeometry height="30" width="60" x="510" y="2145" as="geometry" />
+        </mxCell>
+        <mxCell id="AKepsDW-8kDpoW2XCkPR-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Post Writer Service" vertex="1">
+          <mxGeometry height="35" width="130" x="150" y="2405" as="geometry" />
+        </mxCell>
+        <mxCell id="AKepsDW-8kDpoW2XCkPR-21" edge="1" parent="1" source="AKepsDW-8kDpoW2XCkPR-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=260;exitDy=38.75;exitPerimeter=0;" target="AKepsDW-8kDpoW2XCkPR-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AKepsDW-8kDpoW2XCkPR-18" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fillColor=#fad9d5;strokeColor=#ae4132;" value="Message Queue&lt;div&gt;{userId, postId}&lt;/div&gt;" vertex="1">
+          <mxGeometry height="57.5" width="260" x="340" y="2393.75" as="geometry" />
+        </mxCell>
+        <mxCell id="AKepsDW-8kDpoW2XCkPR-29" edge="1" parent="1" source="AKepsDW-8kDpoW2XCkPR-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=1;" target="AKepsDW-8kDpoW2XCkPR-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AKepsDW-8kDpoW2XCkPR-30" edge="1" parent="1" source="AKepsDW-8kDpoW2XCkPR-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=1;" target="AKepsDW-8kDpoW2XCkPR-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AKepsDW-8kDpoW2XCkPR-31" edge="1" parent="1" source="AKepsDW-8kDpoW2XCkPR-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=1;" target="AKepsDW-8kDpoW2XCkPR-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AKepsDW-8kDpoW2XCkPR-20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Newsfeed Generator&lt;div&gt;Service&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="130" x="697" y="2405" as="geometry" />
+        </mxCell>
+        <mxCell id="AKepsDW-8kDpoW2XCkPR-22" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="6 pull" vertex="1">
+          <mxGeometry height="30" width="60" x="610" y="2425" as="geometry" />
+        </mxCell>
+        <mxCell id="AKepsDW-8kDpoW2XCkPR-23" parent="1" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" value="PostsDB" vertex="1">
+          <mxGeometry height="70" width="80" x="1030" y="2255" as="geometry" />
+        </mxCell>
+        <mxCell id="AKepsDW-8kDpoW2XCkPR-24" parent="1" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" value="FeedsDB" vertex="1">
+          <mxGeometry height="70" width="80" x="1030" y="2455" as="geometry" />
+        </mxCell>
+        <mxCell id="AKepsDW-8kDpoW2XCkPR-25" parent="1" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" value="FollowDB" vertex="1">
+          <mxGeometry height="70" width="80" x="1030" y="2355" as="geometry" />
+        </mxCell>
+        <mxCell id="AKepsDW-8kDpoW2XCkPR-26" edge="1" parent="1" source="AKepsDW-8kDpoW2XCkPR-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.015;entryY=0.467;entryDx=0;entryDy=0;entryPerimeter=0;" target="AKepsDW-8kDpoW2XCkPR-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AKepsDW-8kDpoW2XCkPR-27" parent="1" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Cache_Redis_Product.svg;" value="" vertex="1">
+          <mxGeometry height="72" width="85.71" x="1030" y="2585" as="geometry" />
+        </mxCell>
+        <mxCell id="AKepsDW-8kDpoW2XCkPR-28" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Feeds Cache&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="80" x="1035.71" y="2657" as="geometry" />
+        </mxCell>
+        <mxCell id="AKepsDW-8kDpoW2XCkPR-32" edge="1" parent="1" source="AKepsDW-8kDpoW2XCkPR-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.01;entryY=0.517;entryDx=0;entryDy=0;entryPerimeter=0;curved=1;" target="AKepsDW-8kDpoW2XCkPR-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AKepsDW-8kDpoW2XCkPR-33" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="5" vertex="1">
+          <mxGeometry height="30" width="60" x="270" y="2395" as="geometry" />
+        </mxCell>
+        <mxCell id="AKepsDW-8kDpoW2XCkPR-34" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="7 busca post" vertex="1">
+          <mxGeometry height="30" width="80" x="940" y="2265" as="geometry" />
+        </mxCell>
+        <mxCell id="AKepsDW-8kDpoW2XCkPR-35" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="8 busca seguidores&amp;nbsp;" vertex="1">
+          <mxGeometry height="30" width="100" x="940" y="2355" as="geometry" />
+        </mxCell>
+        <mxCell id="AKepsDW-8kDpoW2XCkPR-36" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="9 grava no feed de cada seguidor" vertex="1">
+          <mxGeometry height="30" width="100" x="930" y="2495" as="geometry" />
+        </mxCell>
+        <mxCell id="AKepsDW-8kDpoW2XCkPR-37" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="10 atualiza cache" vertex="1">
+          <mxGeometry height="30" width="90" x="945" y="2627" as="geometry" />
+        </mxCell>
+        <mxCell id="AKepsDW-8kDpoW2XCkPR-38" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Exemplo&lt;/font&gt;&lt;/h1&gt;&lt;div&gt;&lt;font&gt;-&amp;nbsp; Ana publicou um post, e Bruna e Carla seguem a Ana.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;1. O Newsfeed Generator busca o post da Ana no PostsDB&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;2. Consulta o FollowDB e descobre que os seguidores são Bruna e Carla&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;3. Atualiza o FeedsDB, colocando esse post no feed de cada um dos dois:&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Feed da Bruna:&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;[novo post da Ana, posts anteriores ...]&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Feed da Carla:&amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;[novo post da Ana, posts anteriores ...]&lt;/span&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font&gt;4. Atualiza também o feeds cache com esses feeds&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font&gt;&lt;b&gt;Quem faz esse serviço é o newsfeed generator service.&lt;/b&gt; Os bancos não enviam os dados uns para os outros sozinhos. Esse processamento acontece em segundo plano, a partir do evento que foi colocado na fila quando Ana publicou.&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font&gt;Quando Bruna abre seu aplicativo o caminho fica simples:&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font&gt;1. Bruna pede seu feed&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font&gt;2. Newsfeed reader consulta o feeds cache usando o ID da Bruna&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font&gt;3. Recebe o feed já preparado e retorna para Bruna&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font&gt;Se não tiver no cache faz a consulta&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="420" width="420" x="150" y="2525" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Create Image/Video Post" id="r7wIWq6HeYknyt5SENNV">
+    <mxGraphModel dx="1885" dy="1055" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="01T3yLW0Rpg_HLWIMPVe-0" />
+        <mxCell id="01T3yLW0Rpg_HLWIMPVe-1" parent="01T3yLW0Rpg_HLWIMPVe-0" />
+        <mxCell id="1DV39N13TNLkD8WpiSXC-8" edge="1" parent="01T3yLW0Rpg_HLWIMPVe-1" source="01T3yLW0Rpg_HLWIMPVe-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;curved=1;" target="01T3yLW0Rpg_HLWIMPVe-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="375" y="645" />
+              <mxPoint x="375" y="680" />
+              <mxPoint x="550" y="680" />
+              <mxPoint x="550" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-w8X98C-H_Mtd5pmuQ-C-0" connectable="0" parent="1DV39N13TNLkD8WpiSXC-8" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="POST /v1/posts&lt;div&gt;(........, mediaUrl)&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.3794" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1DV39N13TNLkD8WpiSXC-9" edge="1" parent="01T3yLW0Rpg_HLWIMPVe-1" source="01T3yLW0Rpg_HLWIMPVe-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;curved=1;" target="01T3yLW0Rpg_HLWIMPVe-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1DV39N13TNLkD8WpiSXC-18" edge="1" parent="01T3yLW0Rpg_HLWIMPVe-1" source="01T3yLW0Rpg_HLWIMPVe-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=1;" target="1DV39N13TNLkD8WpiSXC-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="01T3yLW0Rpg_HLWIMPVe-4" parent="01T3yLW0Rpg_HLWIMPVe-1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Cliente" vertex="1">
+          <mxGeometry height="50" width="140" x="100" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="1DV39N13TNLkD8WpiSXC-12" edge="1" parent="01T3yLW0Rpg_HLWIMPVe-1" source="01T3yLW0Rpg_HLWIMPVe-5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=0;" target="1DV39N13TNLkD8WpiSXC-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1DV39N13TNLkD8WpiSXC-14" edge="1" parent="01T3yLW0Rpg_HLWIMPVe-1" source="01T3yLW0Rpg_HLWIMPVe-5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=0;" target="1DV39N13TNLkD8WpiSXC-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="01T3yLW0Rpg_HLWIMPVe-5" parent="01T3yLW0Rpg_HLWIMPVe-1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="API Gateway" vertex="1">
+          <mxGeometry height="50" width="96" x="530" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="01T3yLW0Rpg_HLWIMPVe-16" parent="01T3yLW0Rpg_HLWIMPVe-1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=none;labelBorderColor=none;textShadow=1;fillColor=#cce5ff;strokeColor=#36393d;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Fluxo&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Usuário&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 15px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;inicia o fluxo de&lt;/span&gt;&lt;span style=&quot;font-size: 15px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;&amp;nbsp;criar um Post de Imagem e Vídeo&lt;/span&gt;&lt;/h1&gt;" vertex="1">
+          <mxGeometry height="110" width="460" x="160" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="01T3yLW0Rpg_HLWIMPVe-17" parent="01T3yLW0Rpg_HLWIMPVe-1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#cce5ff;strokeColor=#36393d;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(8, 8, 8), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Processo&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(8, 8, 8), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Passo 1: &lt;span style=&quot;font-weight: normal;&quot;&gt;O Cliente solicita uma URL pré-assinada ao API gateway para fazer upload da imagem ou do vídeo. URL que vai fazer upload direto ao object storage.&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(8, 8, 8), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Passo 2:&lt;span style=&quot;font-weight: 400;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent; font-weight: normal;&quot;&gt;O API gateway recebe essa requisição e a encaminha para o pre-signed URL generator service através de um load balancer — um serviço especializado apenas em gerar essas URLs pré-assinadas e devolvê-las ao cliente.&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;&lt;div&gt;&lt;span style=&quot;color: light-dark(rgb(8, 8, 8), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;Passo 3:&lt;/b&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent;&quot;&gt;O cliente faz upload da imagem ou do vídeo diretamente para o object storage, usando essa URL pré-assinada.&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent; color: light-dark(rgb(8, 8, 8), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: light-dark(rgb(8, 8, 8), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;b&gt;Passo 4:&lt;/b&gt;&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent;&quot;&gt;O object storage retorna ao cliente a URL da imagem enviada — a localização desse arquivo no object storage&lt;/span&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent;&quot;&gt;.&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent; color: light-dark(rgb(8, 8, 8), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: light-dark(rgb(8, 8, 8), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent;&quot;&gt;&lt;b&gt;Passo 5:&amp;nbsp;&lt;/b&gt;&lt;/span&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent;&quot;&gt;O cliente usa essa URL no corpo da requisição e envia uma requisição POST ao API gateway.&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent; color: light-dark(rgb(8, 8, 8), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: light-dark(rgb(8, 8, 8), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent;&quot;&gt;Passo 6:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent;&quot;&gt;O API gateway lida com a requisição e a encaminha para o post writer service através de um load balancer.&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent; color: light-dark(rgb(8, 8, 8), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent; color: light-dark(rgb(8, 8, 8), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;p class=&quot;code-line&quot; dir=&quot;auto&quot; style=&quot;margin-top: 0px; margin-bottom: 16px; position: relative;&quot;&gt;&lt;strong&gt;Passo 7.&lt;/strong&gt; O post writer service salva o novo post no PostsDB.&lt;/p&gt;&lt;p class=&quot;code-line&quot; dir=&quot;auto&quot; style=&quot;margin-top: 0px; margin-bottom: 16px; position: relative;&quot;&gt;&lt;strong&gt;Passo 8.&lt;/strong&gt; O cliente recebe a confirmação de que o post foi criado com sucesso.&lt;/p&gt;&lt;p class=&quot;code-line&quot; dir=&quot;auto&quot; style=&quot;margin-top: 0px; margin-bottom: 16px; position: relative;&quot;&gt;&lt;strong&gt;Passo 9.&lt;/strong&gt; O post writer service também coloca esse evento (post ID e user ID) na fila de mensagens — bem parecido com o design para criar um post de texto. O news feed generator service retira esse evento da fila para processamento.&lt;/p&gt;&lt;p class=&quot;code-line&quot; dir=&quot;auto&quot; style=&quot;margin-top: 0px; margin-bottom: 16px; position: relative;&quot;&gt;&lt;strong&gt;Passo 10.&lt;/strong&gt; O news feed generator service busca os dados do novo post no PostsDB, usando o post ID do evento.&lt;/p&gt;&lt;p class=&quot;code-line&quot; dir=&quot;auto&quot; style=&quot;margin-top: 0px; margin-bottom: 16px; position: relative;&quot;&gt;&lt;strong&gt;Passo 11.&lt;/strong&gt; O news feed generator service encontra todos os seguidores desse usuário usando o followDB.&lt;/p&gt;&lt;p class=&quot;code-line&quot; dir=&quot;auto&quot; style=&quot;margin-top: 0px; margin-bottom: 16px; position: relative;&quot;&gt;&lt;strong&gt;Passo 12.&lt;/strong&gt; O news feed generator service adiciona o novo post ao feed de todos os seguidores, construindo o newsfeed de cada usuário e armazenando-o no feedsDB.&lt;/p&gt;&lt;p class=&quot;code-line&quot; dir=&quot;auto&quot; style=&quot;margin-top: 0px; margin-bottom: 16px; position: relative;&quot;&gt;&lt;strong style=&quot;&quot;&gt;Passo 13 (e último).&lt;/strong&gt; A mesma informação é atualizada no feeds cache, para acesso mais rápido.&lt;/p&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="790" width="570" x="160" y="1050" as="geometry" />
+        </mxCell>
+        <mxCell id="1DV39N13TNLkD8WpiSXC-10" parent="01T3yLW0Rpg_HLWIMPVe-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1. pede pre-signed URL" vertex="1">
+          <mxGeometry height="30" width="140" x="400" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="1DV39N13TNLkD8WpiSXC-11" parent="01T3yLW0Rpg_HLWIMPVe-1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Pre-signed URL&lt;div&gt;Generator Service&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="140" x="740" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="0pcuFzeHH5d8xRQ_LBkd-1" edge="1" parent="01T3yLW0Rpg_HLWIMPVe-1" source="1DV39N13TNLkD8WpiSXC-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="1DV39N13TNLkD8WpiSXC-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0pcuFzeHH5d8xRQ_LBkd-3" edge="1" parent="01T3yLW0Rpg_HLWIMPVe-1" source="1DV39N13TNLkD8WpiSXC-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;dashed=1;curved=1;" target="01T3yLW0Rpg_HLWIMPVe-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="810.07" y="880.07" />
+              <mxPoint x="119.67" y="880.07" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1DV39N13TNLkD8WpiSXC-13" parent="01T3yLW0Rpg_HLWIMPVe-1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Post Writer&amp;nbsp;&lt;div&gt;Service&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="140" x="740" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="1DV39N13TNLkD8WpiSXC-15" parent="01T3yLW0Rpg_HLWIMPVe-1" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" value="Object Storage&lt;div&gt;(ex: Amazon S3)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="142" x="507" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="1DV39N13TNLkD8WpiSXC-16" parent="01T3yLW0Rpg_HLWIMPVe-1" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" value="PostsDB" vertex="1">
+          <mxGeometry height="70" width="80" x="1040" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="1DV39N13TNLkD8WpiSXC-19" parent="01T3yLW0Rpg_HLWIMPVe-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="2" vertex="1">
+          <mxGeometry height="30" width="60" x="640" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="1DV39N13TNLkD8WpiSXC-20" parent="01T3yLW0Rpg_HLWIMPVe-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="3. upload direto do&lt;div&gt;arquivo&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="130" x="370" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="1DV39N13TNLkD8WpiSXC-22" edge="1" parent="01T3yLW0Rpg_HLWIMPVe-1" source="1DV39N13TNLkD8WpiSXC-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.7;exitDx=0;exitDy=0;entryX=0.375;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;curved=1;dashed=1;" target="01T3yLW0Rpg_HLWIMPVe-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1DV39N13TNLkD8WpiSXC-23" parent="01T3yLW0Rpg_HLWIMPVe-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="4. media URL" vertex="1">
+          <mxGeometry height="30" width="80" x="390" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="0pcuFzeHH5d8xRQ_LBkd-0" parent="01T3yLW0Rpg_HLWIMPVe-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="6" vertex="1">
+          <mxGeometry height="30" width="60" x="640" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="0pcuFzeHH5d8xRQ_LBkd-2" parent="01T3yLW0Rpg_HLWIMPVe-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="7. salva post" vertex="1">
+          <mxGeometry height="30" width="110" x="890" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="0pcuFzeHH5d8xRQ_LBkd-4" parent="01T3yLW0Rpg_HLWIMPVe-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="8. confirmacao" vertex="1">
+          <mxGeometry height="30" width="90" x="410" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="9-9iUbl91cepeQ7Uhgt_-0" parent="01T3yLW0Rpg_HLWIMPVe-1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font color=&quot;#080808&quot; style=&quot;font-size: 15px;&quot;&gt;Observação&lt;/font&gt;&lt;/h1&gt;&lt;div&gt;&lt;font color=&quot;#080808&quot; style=&quot;font-size: 15px;&quot;&gt;Diferente do post de texto. As imagens e vídeos são muito grandes para serem passadas pelo api gateway e pelo post writer.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#080808&quot; style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#080808&quot; style=&quot;font-size: 15px;&quot;&gt;Dessa forma separamos em dois:&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;ol&gt;&lt;li&gt;&lt;font color=&quot;#080808&quot; style=&quot;font-size: 15px;&quot;&gt;O arquivo pesado vai direto do cliente para o object storage&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#080808&quot; style=&quot;font-size: 15px;&quot;&gt;Os metadados do post (legenda, autor e a url da mídia) seguem o caminho normal da API&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;&lt;div&gt;&lt;font color=&quot;#080808&quot; style=&quot;font-size: 15px;&quot;&gt;-----------------------------------------------------------------------------------------------------------------&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#080808&quot; style=&quot;font-size: 15px;&quot;&gt;Temos um serviço que gera uma pre-signed URL ao API gateway. Essa pre-signed URL permite mandar a mídia direto ao bucket&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#080808&quot; style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#080808&quot; style=&quot;font-size: 15px;&quot;&gt;O que é uma pre-signed URL: é uma url com assinatura criptografada embutida. Dessa forma dando ao cliente uma permissão temporária (por exemplo 10 minutos) para gravar um arquivo no bucket&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#080808&quot;&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="360" width="570" x="860" y="1000" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="A82IfP9MIVlZYp2KKSi4" name="Comment Post">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="IiPDH7lvkNXy9UQkOEHX-1" edge="1" parent="1" source="XYoejqp1VPSLnkWDs98H-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="XYoejqp1VPSLnkWDs98H-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IiPDH7lvkNXy9UQkOEHX-17" connectable="0" parent="IiPDH7lvkNXy9UQkOEHX-1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="POST /v1/comments" vertex="1">
+          <mxGeometry relative="1" x="-0.1143" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XYoejqp1VPSLnkWDs98H-36" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Cliente" vertex="1">
+          <mxGeometry height="50" width="80" x="170" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="IiPDH7lvkNXy9UQkOEHX-4" edge="1" parent="1" source="XYoejqp1VPSLnkWDs98H-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="IiPDH7lvkNXy9UQkOEHX-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XYoejqp1VPSLnkWDs98H-37" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="API Gateway" vertex="1">
+          <mxGeometry height="50" width="96" x="460" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="IiPDH7lvkNXy9UQkOEHX-6" edge="1" parent="1" source="IiPDH7lvkNXy9UQkOEHX-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="IiPDH7lvkNXy9UQkOEHX-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IiPDH7lvkNXy9UQkOEHX-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Comment Service" vertex="1">
+          <mxGeometry height="35" width="120" x="640" y="467.5" as="geometry" />
+        </mxCell>
+        <mxCell id="IiPDH7lvkNXy9UQkOEHX-5" parent="1" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" value="CommentsDB" vertex="1">
+          <mxGeometry height="70" width="80" x="1000" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="IiPDH7lvkNXy9UQkOEHX-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="salva comentario" vertex="1">
+          <mxGeometry height="30" width="100" x="830" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="IiPDH7lvkNXy9UQkOEHX-11" edge="1" parent="1" source="IiPDH7lvkNXy9UQkOEHX-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="IiPDH7lvkNXy9UQkOEHX-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IiPDH7lvkNXy9UQkOEHX-8" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fillColor=#fad9d5;strokeColor=#ae4132;" value="Message Queue" vertex="1">
+          <mxGeometry height="57.5" width="260" x="1000" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="IiPDH7lvkNXy9UQkOEHX-9" edge="1" parent="1" source="IiPDH7lvkNXy9UQkOEHX-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=18.750000000000004;entryPerimeter=0;" target="IiPDH7lvkNXy9UQkOEHX-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IiPDH7lvkNXy9UQkOEHX-14" edge="1" parent="1" source="IiPDH7lvkNXy9UQkOEHX-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="IiPDH7lvkNXy9UQkOEHX-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IiPDH7lvkNXy9UQkOEHX-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Notification Service" vertex="1">
+          <mxGeometry height="35" width="120" x="1430" y="611.25" as="geometry" />
+        </mxCell>
+        <mxCell id="IiPDH7lvkNXy9UQkOEHX-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="pull" vertex="1">
+          <mxGeometry height="30" width="60" x="1315" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="IiPDH7lvkNXy9UQkOEHX-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Dono do Post" vertex="1">
+          <mxGeometry height="35" width="120" x="1720" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="IiPDH7lvkNXy9UQkOEHX-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="notifica" vertex="1">
+          <mxGeometry height="30" width="60" x="1605" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="0ZVJIdR10KueZC6u-ldT-1" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=none;labelBorderColor=none;textShadow=1;fillColor=#cce5ff;strokeColor=#36393d;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Fluxo&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Usuário realiza um comentário no post de outra pessoa&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;" vertex="1">
+          <mxGeometry height="110" width="460" x="210" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="hvEHbJQA2vye4WmAAVed-1" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#cce5ff;strokeColor=#36393d;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(8, 8, 8), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Processo&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(8, 8, 8), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Passo 1: &lt;span style=&quot;font-weight: 400;&quot;&gt;Usuário escreve um comentário e clica em enviar. Uma requisição POST é enviada ao endpoint com os dados do comentário. Isso vai para um API Gateway&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(8, 8, 8), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Passo 2:&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent; font-weight: normal; color: rgb(0, 0, 0);&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;O API gateway lida com essa requisição de entrada e a encaminha para o comment service através de um load balancer&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;&lt;div&gt;&lt;span style=&quot;color: light-dark(rgb(8, 8, 8), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;Passo 3:&lt;/b&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent;&quot;&gt;O comment service processa esse comentário e o armazena no CommentsDB.&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent; color: light-dark(rgb(8, 8, 8), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: light-dark(rgb(8, 8, 8), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;b&gt;Passo 4:&lt;/b&gt;&amp;nbsp;Depois o cliente recebe a confirmação&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: light-dark(rgb(8, 8, 8), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: light-dark(rgb(8, 8, 8), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent;&quot;&gt;&lt;b&gt;Passo 5:&amp;nbsp;&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent; color: rgb(0, 0, 0);&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;O comment service adiciona um evento (user ID, post ID) na fila de mensagens.&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent; color: light-dark(rgb(8, 8, 8), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: light-dark(rgb(8, 8, 8), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent;&quot;&gt;&lt;b&gt;Passo 6:&lt;/b&gt;&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent; color: rgb(0, 0, 0);&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;O notification service retira esse evento da fila de mensagens e notifica o dono do post — a pessoa recebe uma notificação de que alguém comentou no seu post. O notification service é um serviço de terceiros (third party): não é algo que desenvolvemos, é um serviço externo que usamos.&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent; color: light-dark(rgb(8, 8, 8), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent; color: light-dark(rgb(8, 8, 8), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;p class=&quot;code-line&quot; dir=&quot;auto&quot; style=&quot;margin-top: 0px; margin-bottom: 16px; position: relative;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="440" width="570" x="70" y="710" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Like Post" id="HCbeq-UXoKL2Ts3tLkaC">
+    <mxGraphModel dx="2020" dy="1130" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="SoxYQ4EPgDYwJF6_3uMf-0" />
+        <mxCell id="SoxYQ4EPgDYwJF6_3uMf-1" parent="SoxYQ4EPgDYwJF6_3uMf-0" />
+        <mxCell id="SoxYQ4EPgDYwJF6_3uMf-2" edge="1" parent="SoxYQ4EPgDYwJF6_3uMf-1" source="SoxYQ4EPgDYwJF6_3uMf-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="SoxYQ4EPgDYwJF6_3uMf-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SoxYQ4EPgDYwJF6_3uMf-3" connectable="0" parent="SoxYQ4EPgDYwJF6_3uMf-2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="POST /v1/likes" vertex="1">
+          <mxGeometry relative="1" x="-0.1143" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SoxYQ4EPgDYwJF6_3uMf-4" parent="SoxYQ4EPgDYwJF6_3uMf-1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Cliente" vertex="1">
+          <mxGeometry height="50" width="80" x="170" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="SoxYQ4EPgDYwJF6_3uMf-5" edge="1" parent="SoxYQ4EPgDYwJF6_3uMf-1" source="SoxYQ4EPgDYwJF6_3uMf-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="SoxYQ4EPgDYwJF6_3uMf-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SoxYQ4EPgDYwJF6_3uMf-6" parent="SoxYQ4EPgDYwJF6_3uMf-1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="API Gateway" vertex="1">
+          <mxGeometry height="50" width="96" x="460" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="SoxYQ4EPgDYwJF6_3uMf-7" edge="1" parent="SoxYQ4EPgDYwJF6_3uMf-1" source="SoxYQ4EPgDYwJF6_3uMf-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="SoxYQ4EPgDYwJF6_3uMf-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SoxYQ4EPgDYwJF6_3uMf-8" parent="SoxYQ4EPgDYwJF6_3uMf-1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Like Service" vertex="1">
+          <mxGeometry height="35" width="120" x="640" y="467.5" as="geometry" />
+        </mxCell>
+        <mxCell id="SoxYQ4EPgDYwJF6_3uMf-9" parent="SoxYQ4EPgDYwJF6_3uMf-1" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" value="LikesDB" vertex="1">
+          <mxGeometry height="70" width="80" x="1000" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="SoxYQ4EPgDYwJF6_3uMf-10" parent="SoxYQ4EPgDYwJF6_3uMf-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="salva curtida" vertex="1">
+          <mxGeometry height="30" width="100" x="830" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="SoxYQ4EPgDYwJF6_3uMf-11" edge="1" parent="SoxYQ4EPgDYwJF6_3uMf-1" source="SoxYQ4EPgDYwJF6_3uMf-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="SoxYQ4EPgDYwJF6_3uMf-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SoxYQ4EPgDYwJF6_3uMf-12" parent="SoxYQ4EPgDYwJF6_3uMf-1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fillColor=#fad9d5;strokeColor=#ae4132;" value="Message Queue" vertex="1">
+          <mxGeometry height="57.5" width="260" x="1000" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="SoxYQ4EPgDYwJF6_3uMf-13" edge="1" parent="SoxYQ4EPgDYwJF6_3uMf-1" source="SoxYQ4EPgDYwJF6_3uMf-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=18.750000000000004;entryPerimeter=0;" target="SoxYQ4EPgDYwJF6_3uMf-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SoxYQ4EPgDYwJF6_3uMf-14" edge="1" parent="SoxYQ4EPgDYwJF6_3uMf-1" source="SoxYQ4EPgDYwJF6_3uMf-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="SoxYQ4EPgDYwJF6_3uMf-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SoxYQ4EPgDYwJF6_3uMf-15" parent="SoxYQ4EPgDYwJF6_3uMf-1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Notification Service" vertex="1">
+          <mxGeometry height="35" width="120" x="1430" y="611.25" as="geometry" />
+        </mxCell>
+        <mxCell id="SoxYQ4EPgDYwJF6_3uMf-16" parent="SoxYQ4EPgDYwJF6_3uMf-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="pull" vertex="1">
+          <mxGeometry height="30" width="60" x="1315" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="SoxYQ4EPgDYwJF6_3uMf-17" parent="SoxYQ4EPgDYwJF6_3uMf-1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Dono do Post" vertex="1">
+          <mxGeometry height="35" width="120" x="1720" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="SoxYQ4EPgDYwJF6_3uMf-18" parent="SoxYQ4EPgDYwJF6_3uMf-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="notifica" vertex="1">
+          <mxGeometry height="30" width="60" x="1605" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="SoxYQ4EPgDYwJF6_3uMf-19" parent="SoxYQ4EPgDYwJF6_3uMf-1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=none;labelBorderColor=none;textShadow=1;fillColor=#cce5ff;strokeColor=#36393d;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Fluxo&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Usuário curte o post de outra pessoa&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;" vertex="1">
+          <mxGeometry height="110" width="460" x="210" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="SoxYQ4EPgDYwJF6_3uMf-20" parent="SoxYQ4EPgDYwJF6_3uMf-1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#cce5ff;strokeColor=#36393d;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(8, 8, 8), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Processo&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(8, 8, 8), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Passo 1:&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent; font-weight: normal; color: rgb(0, 0, 0);&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;O usuário clica no botão de curtir, o que envia uma requisição POST ao endpoint &quot;/v1/likes&quot; no API gateway.&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0); font-size: 15px;&quot;&gt;Passo 2:&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent; font-weight: normal; color: rgb(0, 0, 0);&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;O API gateway lida com essa requisição e a encaminha para o like service através de um load balancer.&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;&lt;div&gt;&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;Passo 3:&lt;/b&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent; color: rgb(0, 0, 0);&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;O like service processa a curtida e a armazena no LikesDB. Todos esses passos até aqui são bem parecidos com os dos comentários.&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent; color: light-dark(rgb(8, 8, 8), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: light-dark(rgb(8, 8, 8), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;b&gt;Passo 4:&lt;/b&gt;&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent; color: rgb(0, 0, 0);&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Para acelerar o acesso, o like service também atualiza o likes cache. Esse cache contém o mapeamento entre o post ID e a contagem de curtidas dele. Por exemplo, para três posts A, B e C: o post A com 1.000 curtidas, o post B com 2.000, e assim por diante — tudo isso fica salvo no likes cache.&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent; color: rgb(0, 0, 0);&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: light-dark(rgb(8, 8, 8), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent;&quot;&gt;&lt;b&gt;Passo 5:&amp;nbsp;&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent; color: rgb(0, 0, 0);&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;O like service coloca esse evento (user ID, post ID) na fila de mensagens.&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent; color: light-dark(rgb(8, 8, 8), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: light-dark(rgb(8, 8, 8), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent;&quot;&gt;&lt;b&gt;Passo 6:&lt;/b&gt;&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent; color: rgb(0, 0, 0);&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;O notification service retira esse evento da fila de mensagens e notifica o dono do post de que alguém curtiu a publicação dele.&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent; color: light-dark(rgb(8, 8, 8), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe WPC&amp;quot;, &amp;quot;Segoe UI&amp;quot;, system-ui, Ubuntu, &amp;quot;Droid Sans&amp;quot;, sans-serif; background-color: transparent; color: light-dark(rgb(8, 8, 8), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;p class=&quot;code-line&quot; dir=&quot;auto&quot; style=&quot;margin-top: 0px; margin-bottom: 16px; position: relative;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="450" width="570" x="155" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="bdWsucyRnMo8RFHdGY9Y-0" parent="SoxYQ4EPgDYwJF6_3uMf-1" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Cache_Redis_Product.svg;" value="" vertex="1">
+          <mxGeometry height="72" width="85.71" x="1200" y="434" as="geometry" />
+        </mxCell>
+        <mxCell id="bdWsucyRnMo8RFHdGY9Y-1" parent="SoxYQ4EPgDYwJF6_3uMf-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Likes Cache&lt;/b&gt;&lt;div&gt;&lt;b&gt;(postId -&amp;gt; contagem)&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="144.29" x="1170.71" y="506" as="geometry" />
+        </mxCell>
+        <mxCell id="bdWsucyRnMo8RFHdGY9Y-3" edge="1" parent="SoxYQ4EPgDYwJF6_3uMf-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.017;entryY=0.738;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="760" y="485" as="sourcePoint" />
+            <mxPoint x="1201.4570700000004" y="487.13599999999997" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bdWsucyRnMo8RFHdGY9Y-4" parent="SoxYQ4EPgDYwJF6_3uMf-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="atualiza contagem" vertex="1">
+          <mxGeometry height="30" width="160" x="980" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="bdWsucyRnMo8RFHdGY9Y-6" edge="1" parent="SoxYQ4EPgDYwJF6_3uMf-1" source="bdWsucyRnMo8RFHdGY9Y-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;curved=1;dashed=1;" target="bdWsucyRnMo8RFHdGY9Y-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bdWsucyRnMo8RFHdGY9Y-5" parent="SoxYQ4EPgDYwJF6_3uMf-1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="NewsFeedReader&lt;div&gt;Service&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="144.29" x="162" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="bdWsucyRnMo8RFHdGY9Y-7" parent="SoxYQ4EPgDYwJF6_3uMf-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Lê a contagem ao montar o feed" vertex="1">
+          <mxGeometry height="30" width="85.71" x="450" y="611.25" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,3 +1,7 @@
+<!-- Parte do case: Sistema de Newsfeed (Instagram) — System Design Masterclass -->
+
+# Design da API
+
 ## Criar um Post de Texto
 
 Vamos começar com o design da API, pelo design da API para criar um post de texto. Vamos dar um zoom na comunicação para criar um post de texto e entender exatamente o que está acontecendo ali.
@@ -26,7 +30,6 @@ POST /v1/posts
 ![Diagrama oficial do curso: criar um post de texto](../diagrams/official_api_create_text_post.png)
 
 *O que a imagem mostra:* o cliente (celular) escreve o texto e as hashtags e toca em "POST"; essa ação é traduzida na chamada "Hey IG, let's post this!", que chega ao servidor como uma requisição HTTP — o ícone da lupa representa exatamente o zoom que fizemos nessa comunicação. Do lado direito, o balão de HTTP Body mostra o JSON reproduzido acima (userId, text, hashtags) sendo entregue aos servidores do Instagram.
-
 
 ## Criar um Post de Imagem ou Vídeo
 
@@ -57,7 +60,6 @@ POST /v1/posts
 ![Diagrama oficial do curso: criar um post de imagem ou vídeo](../diagrams/official_api_create_media_post.png)
 
 *O que a imagem mostra:* o mesmo fluxo do post de texto, mas agora o post já inclui uma imagem anexada no celular. O JSON no HTTP Body traz um campo a mais em relação ao post de texto — `mediaUrl` —, que é justamente a localização do arquivo no object storage (S3) mencionada no texto acima; `description` substitui o `text` simples, mas o papel é o mesmo.
-
 
 ## Curtir ou Comentar em um Post
 
@@ -116,7 +118,6 @@ POST /v1/follow
 
 *O que a imagem mostra:* o usuário toca em "FOLLOW" no perfil de outra pessoa; isso é traduzido na mensagem "Hey IG, make me a follower of this account!", que vira a requisição POST para "/v1/follow" com o followerId (quem está seguindo) e o followeeId (quem está sendo seguido) — os mesmos dois campos do JSON acima.
 
-
 ## Ler o Newsfeed (Timeline)
 
 Agora vamos para o design da API para ler o newsfeed, ou ler a timeline. Vamos dar um zoom na comunicação. Quando o usuário está tentando ler o newsfeed, vamos usar REST API também aqui. Nessa comunicação, precisamos focar em duas coisas: o método HTTP e o endpoint.
@@ -125,7 +126,7 @@ O método HTTP aqui é o GET. Como sabemos, o método HTTP diz ao servidor qual 
 
 Em seguida, temos o endpoint, que diz ao servidor onde executar essa ação. Como estamos tentando buscar o newsfeed do usuário, usamos o endpoint "/v1/feed/{userId}" do servidor. "v1/feed" nos diz que queremos obter o newsfeed, e o userId nos diz para quem queremos obter esse newsfeed — por isso temos "/v1/feed/{userId}".
 
-Você deve estar pensando: por que não há um body? Requisições GET não têm body — estamos apenas pedindo ao servidor que nos entregue esse dado, então não há necessidade de um body para isso.
+Você deve estar pensando: por que não há um body? Por convenção, requisições GET não levam body (a especificação HTTP não define semântica para ele) — estamos apenas pedindo ao servidor que nos entregue esse dado, então não há necessidade de um body para isso.
 
 ```http
 GET /v1/feed/{userId}
@@ -135,7 +136,7 @@ GET /v1/feed/{userId}
 
 *O que a imagem mostra:* o celular pede "Hey IG, show me my news feed!" — uma requisição GET simples, sem HTTP Body, para o endpoint "/v1/feeds/{userId}" (equivalente ao "/v1/feed/{userId}" usado neste documento; algumas versões do material do curso usam o plural "feeds"). É esse pedido que o high-level design, na próxima seção, detalha por trás dos panos.
 
----
+Isso encerra a nossa seção de design da API.
 
 > **Resumo rápido — pontos-chave para a entrevista**
 >

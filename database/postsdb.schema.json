@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PostsDB",
+  "description": "Armazena os posts de rede social. Banco NoSQL (escolhido por não ter estrutura fixa entre posts de texto/imagem/vídeo, alta escala de ~50 milhões de criações de post por dia, e padrão de consulta simples por post ID). Indexado por (x-indexed-by): postId.",
+  "x-indexed-by": "postId",
+  "type": "object",
+  "properties": {
+    "postId": {
+      "type": "string",
+      "description": "Identifica o post de forma única."
+    },
+    "userId": {
+      "type": "string",
+      "description": "ID de quem criou o post."
+    },
+    "text": {
+      "type": "string",
+      "description": "Conteúdo de texto do post (quando houver)."
+    },
+    "mediaUrls": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Localização das imagens/vídeos no object storage (quando o post tiver mídia)."
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Momento em que o post foi criado."
+    }
+  },
+  "required": ["postId", "userId", "timestamp"]
+}

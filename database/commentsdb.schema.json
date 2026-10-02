@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CommentsDB",
+  "description": "Armazena os comentários feitos em posts. Banco NoSQL (escala e throughput extremamente altos, ~1,5 bilhão de atividades por dia; schema pode evoluir no futuro para comentários aninhados/respostas; consulta simples por post ID). Indexado por (x-indexed-by): postId.",
+  "x-indexed-by": "postId",
+  "type": "object",
+  "properties": {
+    "commentId": {
+      "type": "string",
+      "description": "Identifica unicamente um comentário."
+    },
+    "userId": {
+      "type": "string",
+      "description": "ID de quem criou o comentário."
+    },
+    "postId": {
+      "type": "string",
+      "description": "Em qual post o comentário foi feito."
+    },
+    "comment": {
+      "type": "string",
+      "description": "Texto do comentário."
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Momento em que o comentário foi feito."
+    }
+  },
+  "required": ["commentId", "userId", "postId", "comment", "timestamp"]
+}

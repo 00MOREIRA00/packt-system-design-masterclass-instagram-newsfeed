@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "LikesDB",
+  "description": "Armazena as curtidas feitas em posts. Banco NoSQL (escala muito alta, ~1,5 bilhão de atividades por dia; schema pode evoluir para diferentes tipos de reação; consultas simples por post ID, tanto para contar curtidas quanto para listar quem curtiu). Indexado por (x-indexed-by): postId.",
+  "x-indexed-by": "postId",
+  "type": "object",
+  "properties": {
+    "likeId": {
+      "type": "string",
+      "description": "Identifica a curtida."
+    },
+    "userId": {
+      "type": "string",
+      "description": "ID de quem curtiu."
+    },
+    "postId": {
+      "type": "string",
+      "description": "Em qual post a curtida foi feita."
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Momento em que a curtida aconteceu."
+    }
+  },
+  "required": ["likeId", "userId", "postId", "timestamp"]
+}

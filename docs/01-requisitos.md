@@ -1,10 +1,12 @@
-# Requisitos Funcionais e Não Funcionais
+<!-- Parte do case: Sistema de Newsfeed (Instagram) — System Design Masterclass -->
 
-Ao projetar um sistema, começamos definindo o que ele precisa fazer e quais qualidades ele precisa ter. Essas duas perguntas dão origem aos requisitos funcionais e aos não funcionais.
+# Requisitos Funcionais e Não Funcionais
 
 ## Requisitos Funcionais
 
-Os requisitos funcionais descrevem **ações que o sistema permite realizar**. No nosso sistema de newsfeed, temos principalmente cinco:
+Ao fazer um system design, o primeiro passo é definir os requisitos. Aqui existem basicamente duas partes: a primeira é definir os requisitos funcionais, e a segunda é definir os requisitos não funcionais. Vamos ver a primeira, que são os requisitos funcionais.
+
+Os requisitos funcionais basicamente falam sobre as funcionalidades. Nesse caso, para o nosso sistema de newsfeed, temos principalmente cinco requisitos.
 
 **1. Criar posts de rede social.** Os usuários têm o poder de criar um post de rede social. O post pode ser um post de texto, de imagem ou de vídeo.
 
@@ -18,27 +20,21 @@ Os requisitos funcionais descrevem **ações que o sistema permite realizar**. N
 
 ## Requisitos Não Funcionais
 
-Os requisitos não funcionais descrevem **as qualidades e os limites que o sistema deve cumprir enquanto executa as funcionalidades**. Eles respondem a perguntas como: o feed precisa carregar em quanto tempo? Por quanto tempo o serviço pode ficar fora do ar? Quantas pessoas devem conseguir usá-lo ao mesmo tempo?
+Agora vamos passar para os requisitos não funcionais. Os requisitos não funcionais basicamente falam de coisas como disponibilidade (availability) e escalabilidade (scalability), que não estão nos requisitos funcionais — não são as funcionalidades principais que buscamos no nosso sistema. Claro, queremos disponibilidade e escalabilidade, mas em que medida (métrica)? É isso que discutimos nos requisitos não funcionais. No nosso sistema de newsfeed, vamos discutir seis deles.
 
-Pense no requisito funcional **“o usuário pode abrir o feed”**. Só isso não diz se o feed abre em um segundo ou em um minuto, nem se ele funciona quando milhões de pessoas acessam o sistema. Essas expectativas de velocidade, disponibilidade e capacidade são requisitos não funcionais. Eles definem **o resultado esperado**, sem exigir uma tecnologia ou arquitetura específica para alcançá-lo.
+**1. Disponibilidade (availability).** Sem dúvida queremos que o nosso sistema de newsfeed esteja disponível a maior parte do tempo, certo? Mas aqui vamos definir uma métrica: vamos estabelecer que o sistema fica no ar (up) 99,999% do tempo.
 
-Uma boa forma de escrevê-los é indicar **o que será medido e qual resultado é aceitável**. Os números abaixo são hipóteses para este exercício de system design; em um projeto real, seriam negociados com base no público, no custo e nas necessidades do produto.
+**2. Consistência eventual (eventual consistency).** Se um usuário posta algo, tudo bem que isso apareça dois segundos depois, ou algo assim. Não queremos que seja instantâneo — bom, idealmente até gostaríamos, seria uma experiência de usuário maravilhosa —, mas está tudo bem ter uns dois segundos de atraso.
 
-**1. Disponibilidade (availability).** É a proporção do tempo em que o serviço pode ser usado. Uma meta de **99,999% de disponibilidade** significa aceitar cerca de **5 minutos de indisponibilidade por ano**. Essa é uma meta exigente: precisa ser justificada pelo produto, pois influencia o custo e a arquitetura.
+**3. Latência (latency).** Queremos que o nosso sistema tenha baixa latência. O que isso quer dizer? Quando clicamos no botão home, o newsfeed deve carregar em um a dois segundos, e não mais do que isso.
 
-**2. Consistência eventual (eventual consistency).** Uma publicação pode ser aceita antes de aparecer no feed de todos os seguidores. Neste exercício, aceitamos um atraso de **até cerca de 2 segundos** para essa atualização. Isso não significa que o post possa desaparecer ou que as regras de privacidade possam ser ignoradas; significa apenas que diferentes leituras podem ver a atualização em momentos ligeiramente diferentes.
+**4. Escalabilidade (scalability).** Instagram ou Twitter, se você reparar, estão escalados pelo mundo todo, e é isso que queremos aqui. Nosso sistema de newsfeed deve suportar 500 milhões de usuários ativos diários e 2 bilhões de usuários ativos mensais. Se você ficou totalmente confuso sobre como chegamos a esses números, pode simplesmente pesquisar no Google.
 
-**3. Latência (latency).** É o tempo entre uma ação e a resposta percebida pelo usuário. Ao abrir a página inicial, queremos que o feed **carregue em até 1 a 2 segundos**. Para transformar essa intenção em uma meta de engenharia, ainda precisaríamos definir o que conta como “carregado” e em que porcentagem dos acessos esse tempo deve ser cumprido.
+**5. Extensibilidade (extensibility).** Todo mundo quer projetar um sistema que seja bastante extensível. Em um sistema de newsfeed, por exemplo, queremos projetar o sistema de forma que seja fácil introduzir funcionalidades como responder a um comentário ou um sistema de recomendação de posts.
 
-**4. Escalabilidade (scalability).** É a capacidade de manter o serviço funcionando bem quando o uso cresce. Podemos assumir, como cenário de dimensionamento, **500 milhões de usuários ativos por dia e 2 bilhões por mês**. Esses números, sozinhos, não determinam a infraestrutura: também precisamos estimar quantas vezes cada pessoa abre o feed, quantos posts cria e qual é o pico de acessos simultâneos.
+**6. Usabilidade (usability).** Para o nosso sistema de newsfeed, a renderização deve ser super rápida. O que isso quer dizer? Bem, é bem frustrante ver um post carregar o texto mas não a imagem ou o vídeo, certo? Isso já aconteceu com todos nós, e não gostamos disso. Para os nossos usuários, queremos uma boa experiência, e é por isso que precisamos dessa usabilidade.
 
-**5. Extensibilidade (extensibility).** É a facilidade de acrescentar ou alterar funcionalidades sem reescrever grandes partes do sistema. Por exemplo, o projeto deve permitir incluir respostas a comentários ou recomendações de posts sem exigir uma reformulação completa do feed. É uma qualidade mais difícil de medir diretamente; podemos avaliá-la pelo esforço e pelas partes afetadas quando uma dessas mudanças for implementada.
-
-**6. Usabilidade (usability).** É a facilidade de usar o produto e entender o que está acontecendo. Por exemplo, se a imagem de um post ainda estiver carregando, a interface deve mostrar esse estado com clareza e continuar utilizável. Isso é diferente da latência: mesmo uma resposta rápida pode oferecer uma experiência confusa.
-
-> **Em uma frase:** requisitos funcionais dizem **o que o usuário consegue fazer**; requisitos não funcionais dizem **quão bem o sistema precisa funcionar ao permitir essas ações**.
-
----
+Bem, esses seis pontos concluem a nossa seção de requisitos não funcionais.
 
 > **Resumo rápido — pontos-chave para a entrevista**
 >
